@@ -1,9 +1,12 @@
 import pygame
 
-screen = pygame.display.set_mode((640, 480))
-running = True
+print("Please choose a screen size, X Y")
+X = int(input())
+Y = int(input())
 
-while running:
+screen = pygame.display.set_mode((X, Y))
+
+while True:
 	event = pygame.event.poll()
 	if event.type == pygame.QUIT:
-		running = False
+		break
