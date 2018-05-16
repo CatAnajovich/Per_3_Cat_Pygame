@@ -1,7 +1,7 @@
 import pygame
 
 y = 0
-dir = 1
+dir = .1
 running = 1
 barheight = 124
 Height = 600
@@ -15,7 +15,7 @@ for i in range(1, ColorHeight):
 	barcolor.append((i*ColorGrad, 0, i*ColorGrad))
 for i in range(1, ColorHeight):
 	barcolor.append((255 - i*ColorGrad, 0, 255 - i*ColorGrad))
- 
+
 while running:
 	event = pygame.event.poll()
 	if event.type == pygame.QUIT:
